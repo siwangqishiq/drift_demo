@@ -5,6 +5,10 @@ import 'package:drift_demo/data.dart';
 import 'package:flutter/material.dart';
 import 'package:sqlite3/open.dart';
 
+
+///
+/// windows版本打包发布后 需要手动拷贝sqlite3.dll 到输出包根目录下
+///
 void main() {
   open.overrideFor(OperatingSystem.windows, _openOnWindows);
 
